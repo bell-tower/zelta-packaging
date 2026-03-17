@@ -31,7 +31,7 @@ do-install:
 	${INSTALL_DATA} ${WRKSRC}/${_ZELTA_ENV} ${STAGEDIR}${ETCDIR}/${_ZELTA_ENV}.sample
 	${INSTALL_DATA} ${WRKSRC}/${_ZELTA_CONF} ${STAGEDIR}${ETCDIR}/${_ZELTA_CONF}.sample
 	${MKDIR} ${STAGEDIR}${_ZELTA_SHARE}
-	${INSTALL_SCRIPT} ${WRKSRC}/share/zelta/* ${STAGEDIR}${_ZELTA_SHARE}
+	${INSTALL_DATA} ${WRKSRC}/share/zelta/* ${STAGEDIR}${_ZELTA_SHARE}
 	${MKDIR} ${STAGEDIR}${PREFIX}/share/man/man7
 	${INSTALL_MAN} ${WRKSRC}/doc/*.7 ${STAGEDIR}${PREFIX}/share/man/man7
 	${MKDIR} ${STAGEDIR}${PREFIX}/share/man/man8

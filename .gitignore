@@ -1,0 +1,42 @@
+# FreeBSD Ports working files
+*.pid
+*.log
+work/
+work.*
+*-work/
+
+# Distfiles (downloaded source)
+distfiles/
+
+# Package files
+*.pkg
+*.tar
+*.gz
+*.bz2
+*.xz
+
+# Staging directories
+stage/
+.staged/
+
+# Portlint and test artifacts
+portlint.log
+test-results/
+
+# Editor files
+*.swp
+*.swo
+*~
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
+A*d
+.o*
+
+# Temporary files
+tmp/
+temp/
+*.tmp
